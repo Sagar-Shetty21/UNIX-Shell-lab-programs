@@ -18,14 +18,14 @@ do
 1) read -p"Enter the value of P : " p 
    read -p"Enter the value of T : " t
    read -p"Enter the value of R : " r 
-   si=`echo "scale=2;( $p * $t * $r ) / 100" | bc`
+   si=`echo "scale=4;( $p * $t * $r ) / 100" | bc`
    echo "---------------------"
    echo "simple interest = $si" 
    echo "---------------------";;
 2) read -p"Enter the value of P : " p 
    read -p"Enter the value of T : " t
    read -p"Enter the value of R : " r 
-   ci=`echo "scale=2; ( $p * ( 1 +  $r / 100 ) ^ $t ) " | bc`
+   ci=`echo "scale=4; ( $p * ((1 + ($r / 100)) ^ $t)) - $p " | bc`
    echo "-------------------------"
    echo "compound interest = $ci" 
    echo "-------------------------";;
