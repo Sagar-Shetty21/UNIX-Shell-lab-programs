@@ -13,7 +13,7 @@ then
 	echo "Enter the message to be sent"
 	write $uname
 else
-	echo "User has logged in"
+	echo "User has not logged in"
 	echo
 	echo "USAGE OF MAIL COMMAND"
 	echo "---------------------"

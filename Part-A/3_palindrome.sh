@@ -29,9 +29,3 @@ echo "$r"
 
 
 
-Get the number from user
-Hold the number in temporary variable
-Reverse the number
-Compare the temporary number with reversed number
-If both numbers are same, print palindrome number
-Else print not palindrome number

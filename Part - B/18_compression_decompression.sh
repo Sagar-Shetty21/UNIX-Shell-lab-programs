@@ -8,10 +8,10 @@
 clear
 echo "enter the file name"
 read fname
-echo "size of $file name before compression is"
+echo "size of $file name before compression is:"
 wc -c $fname
 gzip $fname
-echo "size of file name after compression"
+echo "size of file name after compression:"
 wc -c $fname.gz
 #unzip the file
 gunzip $fname.gz

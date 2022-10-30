@@ -3,11 +3,11 @@
 #4. Shell script to find maximum and minimum of a given set.
 
 
-read -p"enter size of the set : " n
+read -p"Enter size of the set : " n
 #taking input from user
 for((i=0;i<n;i++))
 do
-read -p" enter $((i+1)) number : " nos[$i]
+read -p"Enter number-$((i+1)) : " nos[$i]
 done
 #printing the entered number
 echo "numbers entered are as follows :- "
@@ -29,5 +29,4 @@ greatest=${nos[$i]}
 fi
 done
 #printing smallest and greatest number
-echo "Minimum is $small"
-echo "Maximum is $greatest"
+echo "Minimum is $small, Maximum is $greatest"

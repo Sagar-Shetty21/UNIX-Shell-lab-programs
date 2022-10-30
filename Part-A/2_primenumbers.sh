@@ -2,7 +2,7 @@
 
 #2. Shell script To print all prime numbers between m and n.
 
-echo "Enter the range m and n, m<n : "
+echo "Enter the range m and n, (m < n) : "
 read m n
 
 echo "The prime numbers between $m and $n are as follows :- "

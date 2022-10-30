@@ -3,8 +3,8 @@
 #10. Shell script to display all file names and file permissions.
 
 
-echo " The files and their permissions are" 
-echo "File name            Read   Write    Execute"
+echo "The files and their permissions are :-" 
+echo "               File name                                      Read   Write    Execute"
 for file in *
 do
   if [ -f $file ];
@@ -29,7 +29,7 @@ do
   else 
     X="No"
   fi
-  printf "%-20s %6s %6s %6s\n" $file, $R, $W, $X
+  printf "%-60s %6s %6s %8s\n" $file, $R, $W, $X
   fi
   done
   
